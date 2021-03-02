@@ -14,7 +14,7 @@ while True:
     else:
         print("Please enter Y or N")
 while True:
-    orchid = input("Which Orchid would you like? theyre all pretty good tbh but, [V]andas, [M]iltonia, or [C]attleya > ")
+    orchid = input("Which Orchid would you like?, [V]andas, [M]iltonia, or [C]attleya: ")
     if orchid.upper() not in ['V','M','C']:
         print("Pretty please enter V, M or C thank you thanks")
     else:
@@ -40,7 +40,7 @@ print("Chosen orchid:",orchid)
 
 while True:
     try:
-        quantity = int(input("hey hi hello how many flowah you want? (Between 1 and 20)> "))
+        quantity = int(input("hello how many flowah you want? (Between 1 and 20)> "))
         if quantity < 0 or quantity > 21:
             print("Hello make between 1 and 20 please and thank you thanks")
         else:
@@ -52,6 +52,6 @@ while True:
             price = round(price,2)
             break
     except ValueError:
-        print("I asked for a number here, dummy.")
+        print("I asked for a number here, dum.")
 
-print("Your final price is ALOT probably! $",format(price,'.2f'))
+print("Your final price is... $",format(price,'.2f'))
